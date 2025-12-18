@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="180" viewBox="0 0 240 180">
+  <!-- Room background -->
+  <rect fill="#F5F5F5" width="240" height="180"/>
+  
+  <!-- Wall -->
+  <rect fill="#FFFFFF" width="240" height="120"/>
+  
+  <!-- Floor -->
+  <rect y="120" fill="#E8E8E8" width="240" height="60"/>
+  
+  <!-- Window -->
+  <rect x="20" y="20" width="60" height="80" fill="#87CEEB" stroke="#4682B4" stroke-width="2"/>
+  <line x1="50" y1="20" x2="50" y2="100" stroke="#4682B4" stroke-width="2"/>
+  <line x1="20" y1="60" x2="80" y2="60" stroke="#4682B4" stroke-width="2"/>
+  
+  <!-- Art/Photo on wall -->
+  <rect x="100" y="30" width="50" height="40" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+  
+  <!-- Modern furniture -->
+  <!-- Sofa -->
+  <rect x="160" y="80" width="60" height="40" fill="#4A90E2" rx="3"/>
+  <rect x="155" y="75" width="70" height="10" fill="#357ABD" rx="5"/>
+  
+  <!-- Table -->
+  <rect x="50" y="140" width="80" height="5" fill="#8B4513"/>
+  <rect x="85" y="145" width="10" height="20" fill="#654321"/>
+  
+  <!-- Chair -->
+  <rect x="160" y="130" width="30" height="30" fill="#E91E63" rx="2"/>
+  <rect x="165" y="160" width="20" height="5" fill="#C2185B"/>
+  
+  <!-- FPO Text -->
+  <text x="50%" y="175" font-family="Arial, sans-serif" font-size="10" fill="#999" text-anchor="middle" opacity="0.6">FPO: Interior</text>
+</svg>

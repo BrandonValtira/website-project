@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edina Realty - Moving you home.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <nav class="header-nav">
+            <div class="logo">
+                <img src="images/edina-reality-logo.svg" alt="Edina Realty" class="logo-img" />
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#find-home">Find a home</a></li>
+                <li><a href="#find-realtor">Find a Realtor</a></li>
+                <li><a href="#mortgage">Mortgage</a></li>
+                <li><a href="#sell">Sell</a></li>
+                <li><a href="#insights">Insights</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#realtor-careers">Realtor careers</a></li>
+                <li><a href="#espanol">Español</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="sign-in-btn">Sign in</button>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <img src="images/feature_image.png" alt="Family on white house steps" class="hero-bg-image" />
+            <div class="hero-overlay">
+                <h1 class="hero-title">Moving you <span class="home-underline">home</span></h1>
+                <div class="hero-search-container">
+                    <input type="text" class="hero-search" placeholder="Enter a city, zip, neighborhood, address or MLS #" />
+                    <button class="search-clear-btn" aria-label="Clear search" style="display: none;">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4L4 12M4 4L12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="search-icon-btn" aria-label="Search">
+                        <svg width="13" height="13" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 20L14 14M16 9C16 12.866 12.866 16 9 16C5.13401 16 2 12.866 2 9C2 5.13401 5.13401 2 9 2C12.866 2 16 5.13401 16 9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="search-dropdown">
+                        <div class="search-dropdown-content">
+                            <div class="search-results-column">
+                                <h3 class="search-results-heading">Places</h3>
+                                <div class="search-results-list">
+                                    <div class="search-result-item homes-near-me">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="location-icon">
+                                            <path d="M8 0C4.13401 0 1 3.13401 1 7C1 11.5 8 16 8 16C8 16 15 11.5 15 7C15 3.13401 11.866 0 8 0ZM8 9.5C6.61929 9.5 5.5 8.38071 5.5 7C5.5 5.61929 6.61929 4.5 8 4.5C9.38071 4.5 10.5 5.61929 10.5 7C10.5 8.38071 9.38071 9.5 8 9.5Z" fill="#0066CC"/>
+                                        </svg>
+                                        <span>Homes near me</span>
+                                    </div>
+                                    <div class="search-result-item" data-address="1150 100th Lane NE #C, Blaine, MN">
+                                        <span>1150 100th Lane NE #C, Blaine, MN</span>
+                                    </div>
+                                    <div class="search-result-item" data-address="1146 & 1150 Bingham Lake Drive, Bingham Lake, MN">
+                                        <span>1146 & 1150 Bingham Lake Drive, Bingham Lake, MN</span>
+                                    </div>
+                                    <div class="search-result-item" data-address="1148 Countess Avenue, Lehigh Acres, FL">
+                                        <span>1148 Countess Avenue, Lehigh Acres, FL</span>
+                                    </div>
+                                    <div class="search-result-item" data-address="1150 107th Avenue NE, Blaine, MN">
+                                        <span>1150 107th Avenue NE, Blaine, MN</span>
+                                    </div>
+                                    <div class="search-result-item" data-address="1150 107th Avenue NE, Blaine, MN">
+                                        <span>1150 107th Avenue NE, Blaine, MN</span>
+                                    </div>
+                                    <div class="search-result-item" data-address="1150 119th Avenue NW, Coon Rapids, MN">
+                                        <span>1150 119th Avenue NW, Coon Rapids, MN</span>
+                                    </div>
+                                    <div class="search-result-item" data-address="1150 132nd Lane NE, Blaine, MN">
+                                        <span>1150 132nd Lane NE, Blaine, MN</span>
+                                    </div>
+                                    <div class="search-result-item" data-address="1150 13th Avenue NW, Hutchinson, MN">
+                                        <span>1150 13th Avenue NW, Hutchinson, MN</span>
+                                    </div>
+                                    <div class="search-result-item" data-address="1150 14th Street W, Hastings, MN">
+                                        <span>1150 14th Street W, Hastings, MN</span>
+                                    </div>
+                                    <div class="search-result-item" data-address="1150 150th Street W, Rosemount, MN">
+                                        <span>1150 150th Street W, Rosemount, MN</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-filters-column">
+                                <div class="filter-group">
+                                    <label class="filter-label">Bedrooms</label>
+                                    <select class="filter-select" id="bedrooms-filter">
+                                        <option value="">Any beds</option>
+                                        <option value="1">1+ beds</option>
+                                        <option value="2">2+ beds</option>
+                                        <option value="3">3+ beds</option>
+                                        <option value="4">4+ beds</option>
+                                        <option value="5">5+ beds</option>
+                                    </select>
+                                </div>
+                                <div class="filter-group">
+                                    <label class="filter-label">Price</label>
+                                    <select class="filter-select" id="price-filter">
+                                        <option value="">No min - No max</option>
+                                        <option value="0-100000">$0 - $100,000</option>
+                                        <option value="100000-200000">$100,000 - $200,000</option>
+                                        <option value="200000-300000">$200,000 - $300,000</option>
+                                        <option value="300000-400000">$300,000 - $400,000</option>
+                                        <option value="400000-500000">$400,000 - $500,000</option>
+                                        <option value="500000-750000">$500,000 - $750,000</option>
+                                        <option value="750000-1000000">$750,000 - $1,000,000</option>
+                                        <option value="1000000+">$1,000,000+</option>
+                                    </select>
+                                </div>
+                                <div class="filter-group">
+                                    <label class="filter-label">Listing Type</label>
+                                    <div class="radio-group">
+                                        <label class="radio-label">
+                                            <input type="radio" name="listing-type" value="all" checked>
+                                            <span class="radio-custom"></span>
+                                            <span class="radio-text">All Homes</span>
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="listing-type" value="open">
+                                            <span class="radio-custom"></span>
+                                            <span class="radio-text">Open homes</span>
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="listing-type" value="rent">
+                                            <span class="radio-custom"></span>
+                                            <span class="radio-text">For Rent</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Blocks: Finance, Buy, Sell -->
+    <section class="service-blocks">
+        <div class="service-block">
+            <h2 class="service-title">Finance</h2>
+            <p class="service-description">Take the guesswork out of buying or selling. From mortgage steps to finding a Realtor, you'll find it all here.</p>
+            <button class="service-btn">Finance a home</button>
+        </div>
+        <div class="service-block">
+            <h2 class="service-title">Buy</h2>
+            <p class="service-description">When you work with Edina Realty, your real estate transaction moves more quickly and more smoothly.</p>
+            <button class="service-btn">Buy a home</button>
+        </div>
+        <div class="service-block">
+            <h2 class="service-title">Sell</h2>
+            <p class="service-description">Homes sold by Edina Realty sell for an average of $26,764 more than our competitors' average.</p>
+            <button class="service-btn">Sell a home</button>
+        </div>
+    </section>
+
+    <!-- Local Experts Section -->
+    <section class="local-experts">
+        <div class="experts-container">
+            <div class="guide-image-container">
+                <img src="images/guide.png" alt="Guide to selling your home" class="guide-image" />
+            </div>
+            <div class="experts-content">
+                <h2 class="experts-heading">The local experts</h2>
+                <p class="experts-description">View the guide to the complete home selling process.</p>
+                <button class="experts-btn">Access the ultimate guide</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Listings Carousel -->
+    <section class="property-listings">
+        <div class="listings-carousel">
+            <button class="carousel-btn carousel-prev" aria-label="Previous">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="listings-container">
+                <div class="property-card">
+                    <img src="images/property_1.png" alt="Property 1 exterior" class="property-image" />
+                    <div class="property-info">
+                        <div class="property-price">$535,777</div>
+                        <div class="property-status">
+                            <span class="status-text">For Sale</span>
+                            <span class="mls-number">MLS #6683608</span>
+                        </div>
+                        <div class="property-address">1300 Riverwood Dr APT 102, Burnsville, MN 55337</div>
+                        <div class="property-details">
+                            <span class="detail detail-bed">4 bds</span>
+                            <span class="detail detail-bath">3 ba</span>
+                            <span class="detail detail-sqft">3,800 sqft</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="images/property_2.png" alt="Property 2 interior" class="property-image" />
+                    <div class="property-info">
+                        <div class="property-price">$535,777</div>
+                        <div class="property-status">
+                            <span class="status-text">For Sale</span>
+                            <span class="mls-number">MLS #6683608</span>
+                        </div>
+                        <div class="property-address">1800 Riverwood Dr APT 102, Burnsville, MN 55337</div>
+                        <div class="property-details">
+                            <span class="detail detail-bed">4 bds</span>
+                            <span class="detail detail-bath">3 ba</span>
+                            <span class="detail detail-sqft">3,800 sqft</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="images/property_3.png" alt="Property 3 exterior" class="property-image" />
+                    <div class="property-info">
+                        <div class="property-price">$535,777</div>
+                        <div class="property-status">
+                            <span class="status-text">For Sale</span>
+                            <span class="mls-number">MLS #6683608</span>
+                        </div>
+                        <div class="property-address">1300 Riverwood Dr APT 102, Burnsville, MN 55337</div>
+                        <div class="property-details">
+                            <span class="detail detail-bed">4 bds</span>
+                            <span class="detail detail-bath">3 ba</span>
+                            <span class="detail detail-sqft">3,800 sqft</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="images/property_4.png" alt="Property 4 building" class="property-image" />
+                    <div class="property-info">
+                        <div class="property-price">$535,777</div>
+                        <div class="property-status">
+                            <span class="status-text">For Sale</span>
+                            <span class="mls-number">MLS #6683608</span>
+                        </div>
+                        <div class="property-address">1800 Riverwood Dr APT 102, Burnsville, MN 55337</div>
+                        <div class="property-details">
+                            <span class="detail detail-bed">4 bds</span>
+                            <span class="detail detail-bath">3 ba</span>
+                            <span class="detail detail-sqft">3,800 sqft</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn carousel-next" aria-label="Next">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Download App Section -->
+    <section class="download-app">
+        <div class="app-container">
+            <div class="app-content">
+                <h2 class="app-heading">Download the app</h2>
+                <p class="app-description">
+                    MyAtlas lets you see exactly what's happening along the way with your home purchase, sale or refinance. View the status of your loan application, stay connected to your team of advisors, sign up for moving assistance and more in your MyAtlas account.
+                </p>
+                <div class="app-buttons">
+                    <img src="images/apple.svg" alt="Download on the App Store" class="app-button-image app-button-apple" />
+                    <img src="images/google.svg" alt="GET IT ON Google Play" class="app-button-image app-button-google" />
+                </div>
+            </div>
+            <div class="app-phone">
+                <img src="images/Smartphone.png" alt="MyAtlas map screen" class="phone-image" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Neighborhood Sections -->
+    <section class="neighborhoods">
+        <!-- Minneapolis Neighborhoods -->
+        <div class="neighborhood-section">
+            <h3 class="neighborhood-heading">Explore Minneapolis, MN neighborhoods</h3>
+            <p class="neighborhood-description">
+                Minneapolis is a vibrant city with diverse communities and neighborhoods, each offering unique character, amenities, and housing options. Whether you're looking for a bustling urban environment, a quiet residential area, or something in between, Minneapolis has something for everyone.
+            </p>
+            <div class="neighborhood-list">
+                <a href="#" class="neighborhood-link">Anderson Park</a>
+                <a href="#" class="neighborhood-link">Beltrami</a>
+                <a href="#" class="neighborhood-link">Bottineau</a>
+                <a href="#" class="neighborhood-link">Bryn-Mawr</a>
+                <a href="#" class="neighborhood-link">Calhoun Lake</a>
+                <a href="#" class="neighborhood-link">Central (Downtown)</a>
+                <a href="#" class="neighborhood-link">Columbia Park</a>
+                <a href="#" class="neighborhood-link">Downtown East</a>
+                <a href="#" class="neighborhood-link">Downtown West</a>
+                <a href="#" class="neighborhood-link">Audubon Park</a>
+                <a href="#" class="neighborhood-link">Loring Park</a>
+                <a href="#" class="neighborhood-link">Northeast</a>
+                <a href="#" class="neighborhood-link">North Loop</a>
+                <a href="#" class="neighborhood-link">Uptown</a>
+                <a href="#" class="neighborhood-link">Linden Hills</a>
+                <a href="#" class="neighborhood-link">Kingfield</a>
+                <a href="#" class="neighborhood-link">Powderhorn</a>
+                <a href="#" class="neighborhood-link">Seward</a>
+                <a href="#" class="neighborhood-link">Longfellow</a>
+                <a href="#" class="neighborhood-link">Nokomis</a>
+                <a href="#" class="neighborhood-link">Hiawatha</a>
+                <a href="#" class="neighborhood-link">Standish</a>
+                <a href="#" class="neighborhood-link">Ericsson</a>
+                <a href="#" class="neighborhood-link">Hale</a>
+                <a href="#" class="neighborhood-link">Page</a>
+                <a href="#" class="neighborhood-link">Diamond Lake</a>
+                <a href="#" class="neighborhood-link">Tangletown</a>
+                <a href="#" class="neighborhood-link">Windom</a>
+                <a href="#" class="neighborhood-link">Fulton</a>
+                <a href="#" class="neighborhood-link">Kenwood</a>
+                <a href="#" class="neighborhood-link">Lowry Hill</a>
+                <a href="#" class="neighborhood-link">East Isles</a>
+                <a href="#" class="neighborhood-link">Cedar-Isles-Dean</a>
+                <a href="#" class="neighborhood-link">Harrison</a>
+                <a href="#" class="neighborhood-link">Whittier</a>
+                <a href="#" class="neighborhood-link">Stevens Square</a>
+            </div>
+        </div>
+
+        <!-- Saint Paul Communities -->
+        <div class="neighborhood-section">
+            <h2 class="neighborhood-heading">Explore Saint Paul, MN communities</h2>
+            <p class="neighborhood-description">
+                Saint Paul offers a rich mix of historic neighborhoods and modern communities, each with its own distinct personality. From the charming streets of Summit Hill to the vibrant energy of Lowertown, Saint Paul provides diverse living options for residents.
+            </p>
+            <div class="neighborhood-list">
+                <a href="#" class="neighborhood-link">Battle Creek</a>
+                <a href="#" class="neighborhood-link">Como Park</a>
+                <a href="#" class="neighborhood-link">Dayton's Bluff</a>
+                <a href="#" class="neighborhood-link">Downtown</a>
+                <a href="#" class="neighborhood-link">Frogtown (Thomas-Dale)</a>
+                <a href="#" class="neighborhood-link">Greater East Side</a>
+                <a href="#" class="neighborhood-link">Hamline-Midway</a>
+                <a href="#" class="neighborhood-link">Highland Park</a>
+                <a href="#" class="neighborhood-link">Macalester-Groveland</a>
+                <a href="#" class="neighborhood-link">Merriam Park</a>
+                <a href="#" class="neighborhood-link">Payne-Phalen</a>
+                <a href="#" class="neighborhood-link">Summit Hill</a>
+                <a href="#" class="neighborhood-link">West Side</a>
+                <a href="#" class="neighborhood-link">Lowertown</a>
+                <a href="#" class="neighborhood-link">West Seventh</a>
+                <a href="#" class="neighborhood-link">Capitol Heights</a>
+                <a href="#" class="neighborhood-link">Cathedral Hill</a>
+                <a href="#" class="neighborhood-link">Rice Street</a>
+                <a href="#" class="neighborhood-link">North End</a>
+                <a href="#" class="neighborhood-link">West End</a>
+                <a href="#" class="neighborhood-link">East Side</a>
+                <a href="#" class="neighborhood-link">St. Anthony Park</a>
+                <a href="#" class="neighborhood-link">Union Park</a>
+                <a href="#" class="neighborhood-link">Thomas-Dale</a>
+                <a href="#" class="neighborhood-link">West Midway</a>
+                <a href="#" class="neighborhood-link">North End</a>
+                <a href="#" class="neighborhood-link">Railroad Island</a>
+                <a href="#" class="neighborhood-link">West Side Flats</a>
+                <a href="#" class="neighborhood-link">Dayton's Bluff</a>
+                <a href="#" class="neighborhood-link">Como</a>
+                <a href="#" class="neighborhood-link">Frogtown</a>
+                <a href="#" class="neighborhood-link">Summit-University</a>
+                <a href="#" class="neighborhood-link">West Side</a>
+                <a href="#" class="neighborhood-link">Greater East Side</a>
+                <a href="#" class="neighborhood-link">Payne-Phalen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo_horizontal.svg" alt="Edina Realty" class="footer-logo-img" />
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Company</h3>
+                    <ul class="footer-link-list">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Diversity & Inclusion</a></li>
+                        <li><a href="#">Foundation</a></li>
+                        <li><a href="#">Realtor careers</a></li>
+                        <li><a href="#">Corporate careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Services</h3>
+                    <ul class="footer-link-list">
+                        <li><a href="#">Mortgage</a></li>
+                        <li><a href="#">Title</a></li>
+                        <li><a href="#">Insurance</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Updater</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Specialties</h3>
+                    <ul class="footer-link-list">
+                        <li><a href="#">Lakeshore</a></li>
+                        <li><a href="#">New construction</a></li>
+                        <li><a href="#">Exceptional Properties</a></li>
+                        <li><a href="#">Commercial</a></li>
+                        <li><a href="#">Explore communities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Site</h3>
+                    <ul class="footer-link-list">
+                        <li><a href="#">Site help</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Get our apps</h3>
+                    <div class="footer-app-buttons">
+                        <img src="images/apple.svg" alt="Download on the App Store" />
+                        <img src="images/google.svg" alt="GET IT ON Google Play" />
+                    </div>
+                </div>
+            </div>
+            <div class="footer-apps-social">
+                <img src="images/social.svg" alt="Social media" />
+            </div>
+            <div class="footer-legal">
+                <p class="copyright">© 2003-2023 Edina Realty, Inc.</p>
+                <p class="legal-text">
+                    Equal Housing Opportunity. Each office is independently owned and operated. Real estate agents affiliated with Edina Realty are independent contractor sales associates, not employees. Edina Realty and its subsidiaries do not discriminate on the basis of race, color, religion, sex, handicap, familial status, national origin, sexual orientation, gender identity or source of income. Edina Realty, Inc. is licensed by the Minnesota Department of Commerce and other state licensing authorities. License numbers: MN Broker License #20677787. Edina Realty Title, Inc. is licensed to conduct real estate closings in Minnesota (License #F-2787). Edina Realty Home Services, Inc. is licensed in Minnesota as a real estate broker and maintains offices at 3400 Edina Realty Way, Edina, MN 55435, Phone: 952-928-5565. Edina Realty Mortgage, LLC. NMLS #2555. Licensed by the Department of Financial Protection and Innovation under the California Residential Mortgage Lending Act. License #4131407. Licensed Mortgage Banker - NYS Department of Financial Services. Licensed Mortgage Lender - NJ Department of Banking and Insurance. Licensed by the Virginia State Corporation Commission, License #MC-4990.
+                </p>
+                <p class="legal-address">
+                    Edina Realty, Inc. 3400 Edina Realty Way, Edina, MN 55435
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

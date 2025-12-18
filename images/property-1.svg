@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="220" viewBox="0 0 400 220">
+  <!-- Sky -->
+  <rect fill="#87CEEB" width="400" height="120"/>
+  
+  <!-- Ground/Grass -->
+  <rect y="120" fill="#7CB342" width="400" height="100"/>
+  
+  <!-- House -->
+  <rect x="120" y="80" width="160" height="100" fill="#F5F5DC" stroke="#D3D3D3" stroke-width="2"/>
+  
+  <!-- Roof -->
+  <polygon points="100,80 200,40 300,80" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+  
+  <!-- Door -->
+  <rect x="180" y="140" width="40" height="40" fill="#654321" stroke="#3E2723" stroke-width="2"/>
+  <circle cx="210" cy="160" r="3" fill="#FFD700"/>
+  
+  <!-- Windows -->
+  <rect x="135" y="100" width="30" height="30" fill="#ADD8E6" stroke="#4682B4" stroke-width="2"/>
+  <line x1="150" y1="100" x2="150" y2="130" stroke="#4682B4" stroke-width="1"/>
+  <line x1="135" y1="115" x2="165" y2="115" stroke="#4682B4" stroke-width="1"/>
+  
+  <rect x="235" y="100" width="30" height="30" fill="#ADD8E6" stroke="#4682B4" stroke-width="2"/>
+  <line x1="250" y1="100" x2="250" y2="130" stroke="#4682B4" stroke-width="1"/>
+  <line x1="235" y1="115" x2="265" y2="115" stroke="#4682B4" stroke-width="1"/>
+  
+  <!-- Trees -->
+  <circle cx="60" cy="100" r="25" fill="#2E7D32"/>
+  <rect x="57" y="125" width="6" height="15" fill="#5D4037"/>
+  
+  <circle cx="340" cy="100" r="25" fill="#2E7D32"/>
+  <rect x="337" y="125" width="6" height="15" fill="#5D4037"/>
+  
+  <!-- FPO Text -->
+  <text x="50%" y="210" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle" opacity="0.6">FPO: Property Exterior</text>
+</svg>

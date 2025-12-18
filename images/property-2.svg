@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="220" viewBox="0 0 400 220">
+  <!-- Interior room background -->
+  <rect fill="#F8F8F8" width="400" height="220"/>
+  
+  <!-- Wall -->
+  <rect fill="#FFFFFF" width="400" height="150"/>
+  
+  <!-- Floor with perspective -->
+  <polygon points="0,150 400,150 400,220 0,220" fill="#E8E8E8"/>
+  
+  <!-- Window with curtains -->
+  <rect x="150" y="30" width="100" height="90" fill="#87CEEB" stroke="#4682B4" stroke-width="2"/>
+  <line x1="200" y1="30" x2="200" y2="120" stroke="#4682B4" stroke-width="2"/>
+  <!-- Curtains -->
+  <rect x="145" y="30" width="55" height="90" fill="#D4AF37" opacity="0.7"/>
+  <rect x="200" y="30" width="55" height="90" fill="#D4AF37" opacity="0.7"/>
+  
+  <!-- Dining table -->
+  <ellipse cx="200" cy="170" rx="80" ry="25" fill="#8B4513"/>
+  <rect x="195" y="195" width="10" height="25" fill="#654321"/>
+  
+  <!-- Chairs -->
+  <rect x="140" y="180" width="25" height="30" fill="#E91E63" rx="3"/>
+  <rect x="235" y="180" width="25" height="30" fill="#E91E63" rx="3"/>
+  <rect x="170" y="195" width="25" height="30" fill="#E91E63" rx="3"/>
+  <rect x="205" y="195" width="25" height="30" fill="#E91E63" rx="3"/>
+  
+  <!-- Chandelier -->
+  <circle cx="200" cy="40" r="8" fill="#FFD700"/>
+  <line x1="200" y1="48" x2="195" y2="55" stroke="#FFD700" stroke-width="2"/>
+  <line x1="200" y1="48" x2="205" y2="55" stroke="#FFD700" stroke-width="2"/>
+  
+  <!-- Art on wall -->
+  <rect x="50" y="50" width="60" height="50" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+  <rect x="290" y="50" width="60" height="50" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+  
+  <!-- FPO Text -->
+  <text x="50%" y="210" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle" opacity="0.6">FPO: Property Interior</text>
+</svg>

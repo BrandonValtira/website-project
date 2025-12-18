@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300">
+  <!-- Background -->
+  <rect fill="#E8F5E9" width="600" height="300"/>
+  
+  <!-- Steps/Stairs -->
+  <rect x="100" y="200" width="400" height="30" fill="#BCAAA4" stroke="#A1887F" stroke-width="2"/>
+  <rect x="100" y="230" width="400" height="30" fill="#BCAAA4" stroke="#A1887F" stroke-width="2"/>
+  <rect x="100" y="260" width="400" height="40" fill="#BCAAA4" stroke="#A1887F" stroke-width="2"/>
+  
+  <!-- Parent 1 (left) -->
+  <!-- Head -->
+  <circle cx="200" cy="160" r="20" fill="#FFDBAC"/>
+  <!-- Body -->
+  <rect x="180" y="180" width="40" height="60" fill="#4A90E2" rx="5"/>
+  <!-- Legs -->
+  <rect x="185" y="240" width="12" height="30" fill="#2C3E50"/>
+  <rect x="203" y="240" width="12" height="30" fill="#2C3E50"/>
+  <!-- Arms -->
+  <rect x="165" y="185" width="15" height="40" fill="#4A90E2" rx="7"/>
+  <rect x="220" y="185" width="15" height="40" fill="#4A90E2" rx="7"/>
+  
+  <!-- Parent 2 (right) -->
+  <!-- Head -->
+  <circle cx="400" cy="160" r="20" fill="#FFDBAC"/>
+  <!-- Body -->
+  <rect x="380" y="180" width="40" height="60" fill="#E91E63" rx="5"/>
+  <!-- Legs -->
+  <rect x="385" y="240" width="12" height="30" fill="#2C3E50"/>
+  <rect x="403" y="240" width="12" height="30" fill="#2C3E50"/>
+  <!-- Arms -->
+  <rect x="365" y="185" width="15" height="40" fill="#E91E63" rx="7"/>
+  <rect x="420" y="185" width="15" height="40" fill="#E91E63" rx="7"/>
+  
+  <!-- Child 1 (small, left) -->
+  <!-- Head -->
+  <circle cx="250" cy="180" r="15" fill="#FFDBAC"/>
+  <!-- Body -->
+  <rect x="240" y="195" width="20" height="35" fill="#FF9800" rx="3"/>
+  <!-- Legs -->
+  <rect x="243" y="230" width="7" height="20" fill="#2C3E50"/>
+  <rect x="250" y="230" width="7" height="20" fill="#2C3E50"/>
+  
+  <!-- Child 2 (small, right) -->
+  <!-- Head -->
+  <circle cx="350" cy="180" r="15" fill="#FFDBAC"/>
+  <!-- Body -->
+  <rect x="340" y="195" width="20" height="35" fill="#9C27B0" rx="3"/>
+  <!-- Legs -->
+  <rect x="343" y="230" width="7" height="20" fill="#2C3E50"/>
+  <rect x="350" y="230" width="7" height="20" fill="#2C3E50"/>
+  
+  <!-- FPO Text -->
+  <text x="50%" y="290" font-family="Arial, sans-serif" font-size="16" fill="#666" text-anchor="middle" opacity="0.7">FPO: Family Photo</text>
+</svg>
