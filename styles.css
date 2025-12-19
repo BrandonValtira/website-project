@@ -219,6 +219,13 @@ button {
 
 .hero-search::placeholder {
     color: #373F42;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.hero-search:focus::placeholder,
+.hero-search-container.active .hero-search::placeholder {
+    opacity: 1;
 }
 
 .search-clear-btn {
@@ -264,6 +271,16 @@ button {
     border-radius: 5px;
     cursor: pointer;
     box-sizing: border-box;
+}
+
+.search-icon-btn svg {
+    width: 15.6px;
+    height: 15.6px;
+    transition: transform 0.2s ease;
+}
+
+.hero-search-container.active .search-icon-btn svg {
+    transform: scale(1.1);
 }
 
 /* Search Dropdown Menu */
