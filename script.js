@@ -125,11 +125,17 @@ if (heroSearch) {
         }
     };
 
+    // Get hero background element for blur effect
+    const heroBackground = document.querySelector('.hero-background');
+
     // Show dropdown on focus
     heroSearch.addEventListener('focus', () => {
         if (searchDropdown) {
             searchDropdown.classList.add('active');
             heroSearch.parentElement.classList.add('active');
+            if (heroBackground) {
+                heroBackground.classList.add('search-active');
+            }
             positionDropdown();
             // Show addresses immediately when focused
             filterAddresses();
@@ -142,6 +148,9 @@ if (heroSearch) {
             if (searchDropdown && !searchDropdown.matches(':hover') && document.activeElement !== heroSearch) {
                 searchDropdown.classList.remove('active');
                 heroSearch.parentElement.classList.remove('active');
+                if (heroBackground) {
+                    heroBackground.classList.remove('search-active');
+                }
             }
         }, 200);
     });
@@ -157,6 +166,9 @@ if (heroSearch) {
             if (!heroSearch.contains(e.target) && !searchDropdown.contains(e.target)) {
                 searchDropdown.classList.remove('active');
                 heroSearch.parentElement.classList.remove('active');
+                if (heroBackground) {
+                    heroBackground.classList.remove('search-active');
+                }
             }
         });
     }
@@ -178,6 +190,9 @@ if (heroSearch) {
         if (searchDropdown && !searchDropdown.classList.contains('active')) {
             searchDropdown.classList.add('active');
             heroSearch.parentElement.classList.add('active');
+            if (heroBackground) {
+                heroBackground.classList.add('search-active');
+            }
             positionDropdown();
         }
         filterAddresses();
@@ -204,6 +219,9 @@ if (heroSearch) {
             if (searchDropdown) {
                 searchDropdown.classList.remove('active');
                 heroSearch.parentElement.classList.remove('active');
+            }
+            if (heroBackground) {
+                heroBackground.classList.remove('search-active');
             }
             console.log('Searching for homes near me');
             // Add location-based search functionality here
@@ -263,6 +281,9 @@ if (heroSearch) {
                 searchDropdown.classList.remove('active');
                 heroSearch.parentElement.classList.remove('active');
             }
+            if (heroBackground) {
+                heroBackground.classList.remove('search-active');
+            }
             // Trigger search
             console.log('Selected address:', address);
         });
@@ -291,6 +312,9 @@ if (heroSearch) {
                     searchDropdown.classList.remove('active');
                     heroSearch.parentElement.classList.remove('active');
                 }
+                if (heroBackground) {
+                    heroBackground.classList.remove('search-active');
+                }
                 // Add your search functionality here
             }
         }
@@ -301,6 +325,9 @@ if (heroSearch) {
         if (e.key === 'Escape' && searchDropdown) {
             searchDropdown.classList.remove('active');
             heroSearch.parentElement.classList.remove('active');
+            if (heroBackground) {
+                heroBackground.classList.remove('search-active');
+            }
             heroSearch.blur();
         }
     });
