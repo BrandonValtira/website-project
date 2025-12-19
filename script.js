@@ -92,6 +92,10 @@ const searchClearBtn = document.querySelector('.search-clear-btn');
 const searchResultsList = document.querySelector('.search-results-list');
 const searchResultItems = document.querySelectorAll('.search-result-item[data-address]');
 
+// Store original parent and next sibling for restoring dropdown position
+let dropdownOriginalParent = null;
+let dropdownOriginalNextSibling = null;
+
 // Mock address data for predictive typing
 const mockAddresses = [
     '1150 100th Lane NE #C, Blaine, MN',
@@ -117,11 +121,35 @@ if (heroSearch) {
         if (searchDropdown && searchDropdown.classList.contains('active')) {
             const searchRect = heroSearch.getBoundingClientRect();
             const containerRect = heroSearch.parentElement.getBoundingClientRect();
+            
+            // Move dropdown to body level if not already there (for Safari stacking context fix)
+            if (searchDropdown.parentElement !== document.body) {
+                // Store original position
+                dropdownOriginalParent = searchDropdown.parentElement;
+                dropdownOriginalNextSibling = searchDropdown.nextSibling;
+                // Move to body
+                document.body.appendChild(searchDropdown);
+            }
+            
+            // Set positioning styles
+            searchDropdown.style.position = 'fixed';
             searchDropdown.style.top = (searchRect.top + searchRect.height) + 'px';
-            searchDropdown.style.left = containerRect.left + 'px';
+            searchDropdown.style.left = '50%';
             searchDropdown.style.width = containerRect.width + 'px';
-            searchDropdown.style.transform = 'none';
-            searchDropdown.style.marginLeft = '0';
+            searchDropdown.style.marginLeft = (-containerRect.width / 2) + 'px';
+            searchDropdown.style.zIndex = '2147483647';
+            searchDropdown.style.display = 'block';
+        }
+    };
+
+    // Function to restore dropdown to original position
+    const restoreDropdownPosition = () => {
+        if (searchDropdown && dropdownOriginalParent) {
+            if (dropdownOriginalNextSibling) {
+                dropdownOriginalParent.insertBefore(searchDropdown, dropdownOriginalNextSibling);
+            } else {
+                dropdownOriginalParent.appendChild(searchDropdown);
+            }
         }
     };
 
@@ -131,12 +159,16 @@ if (heroSearch) {
     // Show dropdown on focus
     heroSearch.addEventListener('focus', () => {
         if (searchDropdown) {
+            // Add active class first
             searchDropdown.classList.add('active');
             heroSearch.parentElement.classList.add('active');
             if (heroBackground) {
                 heroBackground.classList.add('search-active');
             }
+            // Position and show dropdown
             positionDropdown();
+            // Force a reflow to ensure styles are applied
+            searchDropdown.offsetHeight;
             // Show addresses immediately when focused
             filterAddresses();
         }
@@ -151,6 +183,7 @@ if (heroSearch) {
                 if (heroBackground) {
                     heroBackground.classList.remove('search-active');
                 }
+                restoreDropdownPosition();
             }
         }, 200);
     });
@@ -169,6 +202,7 @@ if (heroSearch) {
                 if (heroBackground) {
                     heroBackground.classList.remove('search-active');
                 }
+                restoreDropdownPosition();
             }
         });
     }
@@ -223,6 +257,7 @@ if (heroSearch) {
             if (heroBackground) {
                 heroBackground.classList.remove('search-active');
             }
+            restoreDropdownPosition();
             console.log('Searching for homes near me');
             // Add location-based search functionality here
         });
@@ -284,6 +319,7 @@ if (heroSearch) {
             if (heroBackground) {
                 heroBackground.classList.remove('search-active');
             }
+            restoreDropdownPosition();
             // Trigger search
             console.log('Selected address:', address);
         });
@@ -315,6 +351,7 @@ if (heroSearch) {
                 if (heroBackground) {
                     heroBackground.classList.remove('search-active');
                 }
+                restoreDropdownPosition();
                 // Add your search functionality here
             }
         }
@@ -328,6 +365,7 @@ if (heroSearch) {
             if (heroBackground) {
                 heroBackground.classList.remove('search-active');
             }
+            restoreDropdownPosition();
             heroSearch.blur();
         }
     });

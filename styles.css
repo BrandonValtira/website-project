@@ -130,8 +130,9 @@ button {
     min-height: 495px;
     margin: 0;
     padding: 0;
-    z-index: 99999;
+    z-index: 1000;
     overflow: visible;
+    isolation: isolate;
 }
 
 .hero-background {
@@ -267,29 +268,30 @@ button {
 
 /* Search Dropdown Menu */
 .search-dropdown {
-    position: fixed;
-    top: auto;
-    left: auto;
-    right: auto;
-    width: 630px;
-    background-color: var(--bg-white);
+    position: fixed !important;
+    left: 50% !important;
+    right: auto !important;
+    width: 630px !important;
+    margin-left: -315px !important;
+    background-color: var(--bg-white) !important;
     border-radius: 0 0 8px 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-top: none;
     display: block;
-    z-index: 999999;
+    z-index: 2147483647 !important;
     max-height: 0;
     overflow: hidden;
-    transform: translateX(-50%);
-    margin-left: 50%;
+    transform: none !important;
     opacity: 0;
     transition: max-height 0.3s ease, opacity 0.2s ease;
+    pointer-events: none;
 }
 
 .search-dropdown.active {
     max-height: 420px;
     opacity: 1;
+    pointer-events: auto;
 }
 
 .search-dropdown-content {
@@ -298,7 +300,7 @@ button {
     gap: 0;
     max-height: 420px;
     position: relative;
-    z-index: 100003;
+    z-index: 99999;
 }
 
 .search-results-column {
@@ -308,7 +310,7 @@ button {
     max-height: 420px;
     text-align: left;
     position: relative;
-    z-index: 100003;
+    z-index: 99999;
 }
 
 .search-results-heading {
@@ -367,7 +369,7 @@ button {
     max-height: 420px;
     text-align: left;
     position: relative;
-    z-index: 100003;
+    z-index: 99999;
 }
 
 .filter-group {
@@ -481,8 +483,6 @@ button {
     margin: 0 auto;
     padding: 23px 2rem 27px 2rem;
     gap: 3rem;
-    position: relative;
-    z-index: 1;
 }
 
 .service-block {
@@ -545,7 +545,7 @@ button {
     background-color: var(--bg-light);
     padding: 2rem 2rem 0 2rem;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
 .experts-container {
@@ -612,7 +612,7 @@ button {
     padding: 4rem 2rem 2.8rem 2rem;
     background-color: var(--bg-white);
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
 .listings-header {
